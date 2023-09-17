@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround1"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.EntryFragment">
+
+    <EditText
+        android:id="@+id/editTextNameAndSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:ems="50"
+        android:hint="Name And Surname"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="#74CAD5"
+        android:text="enter"
+        android:textColor="#02332F"
+        android:textColorHint="#050505" />
+
+</LinearLayout>

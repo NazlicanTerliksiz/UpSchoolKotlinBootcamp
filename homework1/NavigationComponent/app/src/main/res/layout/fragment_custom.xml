@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.CustomFragment">
+
+    <TextView
+        android:id="@+id/textViewNameAndSurname2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="50dp"
+        android:text="text View"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:text="Where do you live?"
+        android:textColor="#3F51B5"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextHometown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="29dp"
+        android:text="What is the name of your school?"
+        android:textColor="#3F51B5"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextSchool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="29dp"
+        android:text="Which department?"
+        android:textColor="#3F51B5"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp" />
+
+    <Button
+        android:id="@+id/buttonSave2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Save"
+        android:textColor="#83C0C8">
+
+    </Button>
+
+
+</LinearLayout>

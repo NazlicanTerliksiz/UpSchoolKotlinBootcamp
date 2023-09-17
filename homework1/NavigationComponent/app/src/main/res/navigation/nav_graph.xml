@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_garph"
+    app:startDestination="@id/entryFragment">
+
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="com.nazlican.navigationcomponent.ui.EntryFragment"
+        android:label="fragment_entry"
+        tools:layout="@layout/fragment_entry" >
+        <action
+            android:id="@+id/action_entryFragment_to_personalDetailsFragment"
+            app:destination="@id/personalDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customFragment"
+        android:name="com.nazlican.navigationcomponent.ui.CustomFragment"
+        android:label="fragment_custom"
+        tools:layout="@layout/fragment_custom" >
+        <action
+            android:id="@+id/action_customFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <argument
+            android:name="personalInfo"
+            app:argType="com.nazlican.navigationcomponent.data.PersonalInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.nazlican.navigationcomponent.ui.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="info"
+            app:argType="com.nazlican.navigationcomponent.data.Info" />
+        <action
+            android:id="@+id/action_resultFragment_to_entryFragment"
+            app:destination="@id/entryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalDetailsFragment"
+        android:name="com.nazlican.navigationcomponent.ui.PersonalDetailsFragment"
+        android:label="fragment_personal_details"
+        tools:layout="@layout/fragment_personal_details" >
+        <argument
+            android:name="nameAndSurname"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_personalDetailsFragment_to_customFragment"
+            app:destination="@id/customFragment" />
+    </fragment>
+</navigation>
