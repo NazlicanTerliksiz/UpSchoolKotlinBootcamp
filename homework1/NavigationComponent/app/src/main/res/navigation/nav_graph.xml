@@ -21,7 +21,9 @@
         tools:layout="@layout/fragment_custom" >
         <action
             android:id="@+id/action_customFragment_to_resultFragment"
-            app:destination="@id/resultFragment" />
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/customFragment"
+            app:popUpToInclusive="true" />
         <argument
             android:name="personalInfo"
             app:argType="com.nazlican.navigationcomponent.data.PersonalInfo" />
@@ -36,7 +38,8 @@
             app:argType="com.nazlican.navigationcomponent.data.Info" />
         <action
             android:id="@+id/action_resultFragment_to_entryFragment"
-            app:destination="@id/entryFragment" />
+            app:destination="@id/entryFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/personalDetailsFragment"
@@ -48,6 +51,8 @@
             app:argType="string" />
         <action
             android:id="@+id/action_personalDetailsFragment_to_customFragment"
-            app:destination="@id/customFragment" />
+            app:destination="@id/customFragment"
+            app:popUpTo="@id/personalDetailsFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
